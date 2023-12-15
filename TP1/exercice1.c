@@ -63,7 +63,8 @@ int main(void) {
     d = 2;
     c = 3; /* On met la valeur de c à 3 ici dans la fonction parce qu'elle ne peut pas être défini ailleurs. */
     n = 100 * c + 10 * d + u; /* On enlève le int car dans la norme C ANSI, il faut toujours écrire les défintions de variable au début. */
-    printf("321 = %i\n", n);
+    printf("321 = %i\n", n); /* On aurait pu utiliser %d. */
+    /* %d lit et affiche des entiers en base 10; %i lit des entiers en base 8, 10, 16.*/
 }
 
 /* Output de ./a.out :
