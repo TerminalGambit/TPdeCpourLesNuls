@@ -60,6 +60,22 @@ void question4(void) {
 /* Output : 
 Pi vaut 3.141593 */
 
+/* 5. Copiez et exécutez la fonction ci-dessous. Prenez un instant pour méditer sur ce code.
+void question5(void) {
+    char c = 'a';
+    int i = c + 1;
+    printf("Valeur de c en caractère est '%c' et son équivalent décimal vaut %d\n", c, c);
+    printf("Valeur de i en caractère est '%c' et son équivalent décimal vaut %d\n", i, i);
+}*/
+
+void question5(void) {
+    char c = 'a'; /* On déclare un caractère c qui vaut 'a'. */
+    int i = c + 1; /* On déclare un entier i qui vaut c + 1. */
+    printf("Valeur de c en caractère est '%c' et son équivalent décimal vaut %d\n", c, c);
+    /* On affiche la valeur de c en caractère et son équivalent décimal. */
+    printf("Valeur de i en caractère est '%c' et son équivalent décimal vaut %d\n", i, i);
+    /* On affiche la valeur de i en caractère et son équivalent décimal. */
+}
 
 int main(void) {
     printf("Question 1 : \n");
