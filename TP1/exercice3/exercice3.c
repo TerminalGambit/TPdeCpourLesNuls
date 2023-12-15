@@ -91,6 +91,13 @@ double moyenne_stdin(void) {
     On convertit somme en double pour avoir une division réelle.
     On a donc une division réelle.
     */
+    /* Quand est-ce qu'on peut utiliser cette méthode pour transformer un type ?
+    Quand on veut transformer un type en un autre type qui est plus grand.
+    Autres cas où on peut utiliser cette méthode :
+    - int -> float
+    - int -> double
+    - float -> double
+    */
     return moyenne;
 }
 
