@@ -21,7 +21,8 @@ void main(void) {
 
 /*
 2. Dans un terminal, compilez le fichier avec la commande : « gcc exercice1.c ». Quel est le nom de l’exécutable
-produit ? Lancez-le. Le résultat est-il celui attendu ?
+produit ? Lancez-le. Le résultat est-il celui attendu ? 
+*/
 
 /* Voici l'erreur affichée : 
     ➜  TP1 git:(main) gcc exercice1.c 
@@ -51,7 +52,7 @@ Vous devez trouver trois erreurs.
 
 #include <stdio.h> /* Nécessaire pour l'utilisation de la fonction print. */
 
-global_c = 3; /* On redéfinit la variable c pour ne pas se confondre. */
+int global_c = 3; /* On redéfinit la variable c pour ne pas se confondre. */
 
 int main(void) {
     int u;
