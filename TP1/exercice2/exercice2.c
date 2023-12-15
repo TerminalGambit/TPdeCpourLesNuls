@@ -31,6 +31,9 @@ void question2(void) {
     printf("\n"); /* Pas nécessaire mais plus propre. */
 }
 
+/* Output : 
+65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 */
+
 /* 3. Écrivez un code C qui affiche sur une ligne les caractères dont le code ASCII va de 65 à 90 */
 
 void question3(void) {
