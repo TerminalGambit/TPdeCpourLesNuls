@@ -47,5 +47,8 @@ int main(void) {
 
     printf("\nQuestion 2 : \n");
     question2();
+
+    printf("\nQuestion 3 : \n");
+    question3();
     return 0;
 }
