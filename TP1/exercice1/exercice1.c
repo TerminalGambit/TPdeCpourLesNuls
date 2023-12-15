@@ -48,6 +48,12 @@ Corrigez le code jusqu’à ce que le compilateur n’affiche aucun warning et q
 Vous devez trouver trois erreurs.
 */
 
+/* Explication de la commande gcc -Wall -ansi -pedantic exercice1.c :
+    -Wall : affiche tous les warnings
+    -ansi : respecte la norme ANSI C
+    -pedantic : affiche tous les warnings qui ne sont pas dans la norme ANSI C
+*/
+
 /* La nouvelle fonction main sans erreur : */
 
 #include <stdio.h> /* Nécessaire pour l'utilisation de la fonction print. */
@@ -79,4 +85,10 @@ options pour créer un fichier exercice1.
 /* 
 NB: ne pas oublier de se donner les permissions pour compiler.sh : 
 chmod u+x compiler.sh
+*/
+
+/* A retenir :
+    - On compile avec gcc -Wall -ansi -pedantic exercice1.c
+    - On exécute avec ./a.out
+    - On peut créer un fichier compiler.sh qui lance automatiquement la bonne commande de compilation avec les bonnes options pour créer un fichier exercice1.
 */
