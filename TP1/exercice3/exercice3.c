@@ -66,7 +66,31 @@ L'entier 18 est pair.
 ➜  exercice3 git:(main) ✗ 
 */
 
+/*
+3. De même, écrire une fonction moyenne_stdin qui lit des notes sur l’entrée standard et renvoie la moyenne. 
+Si une note n’est pas valide (plus grande que 20), elle sera ignorée. On s’arrête lorsque la valeur lue n’est pas un
+entier. 
+*/
+
+double moyenne_stdin(void) {
+    int n;
+    int somme = 0;
+    int i = 0;
+    double moyenne = 0;
+    while ((n = lire_entier()) != -1) {
+        if (n <= 20) {
+            somme += n;
+            i++;
+        }
+    }
+    return moyenne;
+}
+
 int main(void) {
-    question2();
+    printf("Question 2 :\n");
+    /* question2(); */
+
+    printf("\nQuestion 3 :\n");
+    moyenne_stdin();
     return 0;
 }
