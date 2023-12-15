@@ -83,6 +83,7 @@ double moyenne_stdin(void) {
             i++;
         }
     }
+    moyenne = (double) somme / i;
     return moyenne;
 }
 
