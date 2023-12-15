@@ -31,6 +31,25 @@ void pyramide(int n) {
     }
 }
 
+/* 
+La première boucle for, avec la variable "i", itère de 1 jusqu'à "n". 
+Cette boucle est responsable de gérer les lignes de la pyramide.
+
+À chaque itération de la boucle "i", la fonction utilise la fonction printf 
+pour afficher un certain nombre d'espaces avant d'afficher les étoiles. 
+Le nombre d'espaces est calculé en utilisant l'expression "n - i". 
+Cela signifie que le nombre d'espaces diminue à chaque ligne de la pyramide.
+
+Ensuite, la deuxième boucle for, avec la variable "j", itère de 1 jusqu'à "i". 
+Cette boucle est responsable de gérer le nombre d'étoiles à afficher sur chaque ligne de la pyramide. 
+À chaque itération de la boucle "j", la fonction utilise à nouveau la fonction printf 
+pour afficher une étoile suivie d'un espace.
+
+Après avoir affiché les étoiles pour une ligne donnée, 
+la fonction utilise la fonction printf avec le caractère de saut de ligne "\n" 
+pour passer à la ligne suivante.
+*/
+
 int lire_entier(void) {
     int n = 0;
     char c;
