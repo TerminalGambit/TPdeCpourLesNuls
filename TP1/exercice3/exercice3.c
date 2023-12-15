@@ -198,8 +198,10 @@ décimale sinon. On affichera soit une chaîne de la forme « 25/10 = 2.5 (appro
 void division(int a, int b) {
     if (a % b == 0) {
         division_euclidienne(a, b);
+        printf(" (exacte)\n");
     } else {
         division_decimale(a, b);
+        printf(" (approchée)\n");
     }
 }
 
