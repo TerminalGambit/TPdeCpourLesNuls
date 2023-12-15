@@ -47,7 +47,11 @@ void question3(void) {
 /* 4. Créez deux variables, une chaîne s="Pi vaut" et un nombre x=3.1415926 puis affichez les avec printf.*/
 
 void question4(void) {
-    
+    char s[] = "Pi vaut"; /* La syntaxe n'est pas évidente je vous explique ça : */
+    /* char s[] : on déclare une variable de type char qui est un tableau de caractères. */
+    float x = 3.1415926; /* On déclare un float car notre nombre est à virgule. */
+    printf("%s %f\n", s, x); /* On affiche la chaîne de caractère s suivie de x. */
+    /* %s pour afficher une chaîne de caractère, %f pour afficher un float. */
 }
 
 /* Output : 
@@ -62,5 +66,15 @@ int main(void) {
 
     printf("\nQuestion 3 : \n");
     question3();
+
+    printf("\nQuestion 4 : \n");
+    question4();
     return 0;
 }
+
+/* A retenir de cet exercice : */
+/* Quand on veut utiliser printf, il faut impérativement ajouter un #include <stdio.h> */
+/* Pour afficher un entier, on utilise %d ou %i. */
+/* Pour afficher un caractère, on utilise %c. */
+/* Pour afficher une chaîne de caractère, on utilise %s. */
+/* Pour afficher un float, on utilise %f. */
