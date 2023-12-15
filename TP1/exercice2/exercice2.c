@@ -44,6 +44,9 @@ void question3(void) {
     printf("\n"); /* Pas nécessaire mais plus propre. */
 }
 
+/* Output : 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z */
+
 int main(void) {
     printf("Question 1 : \n");
     question1();
