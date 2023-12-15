@@ -77,7 +77,8 @@ void question5(void) {
     /* On affiche la valeur de i en caractère et son équivalent décimal. */
 }
 
-int main(void) {
+int main(void) { /* J'ai rajouté des printf pour enjolivait mon output mais c'est à chacun son gout. */
+    /* On utilise la fonction question1() pour exécuter le code correspondant lors de l'exécution du programme. */    
     printf("Question 1 : \n");
     question1();
 
