@@ -77,6 +77,11 @@ void question5(void) {
     /* On affiche la valeur de i en caractère et son équivalent décimal. */
 }
 
+/* Output :
+Valeur de c en caractère est 'a' et son équivalent décimal vaut 97
+Valeur de i en caractère est 'b' et son équivalent décimal vaut 98
+*/
+
 /* 6. Écrivez le code qui affiche sur une ligne les caractères de 'a' à 'z' (en minuscule) */
 
 void question6(void) {
@@ -87,7 +92,13 @@ void question6(void) {
     printf("\n"); /* Pas nécessaire mais plus propre. */
 }
 
+/* Output :
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+*/
+
 /* Pourquoi ce code est trop cool et rend le C magnifique (comparé à Python) */
+/* On peut itérer sur les caractères comme sur les entiers. */
+/* En Python, on peut boucler que sur les entiers alors qu'ici c'est un caractère !*/
 
 int main(void) { /* J'ai rajouté des printf pour enjolivait mon output mais c'est à chacun son gout. */
     /* On utilise la fonction question1() pour exécuter le code correspondant lors de l'exécution du programme. */    
@@ -102,6 +113,12 @@ int main(void) { /* J'ai rajouté des printf pour enjolivait mon output mais c'e
 
     printf("\nQuestion 4 : \n");
     question4();
+
+    printf("\nQuestion 5 : \n");
+    question5();
+
+    printf("\nQuestion 6 : \n");
+    question6();
     return 0;
 }
 
