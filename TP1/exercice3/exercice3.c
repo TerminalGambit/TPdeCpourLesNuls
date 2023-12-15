@@ -151,6 +151,13 @@ void test_division_euclidienne(void) {
     division_euclidienne(25, 1);
 }
 
+/* Conseils pour créer vos fonctions test :
+- Il faut tester les fonctions avec des valeurs extrêmes.
+- Il faut afficher les résultats des tests et bien préciser les paramètres.
+- Parfois, vous allez rencontrer des erreurs de compilation et vous allez devoir les corriger.
+C'est pour ça qu'il faut bien tester vos fonctions.
+*/
+
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
