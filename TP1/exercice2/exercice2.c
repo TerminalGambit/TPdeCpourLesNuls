@@ -77,6 +77,18 @@ void question5(void) {
     /* On affiche la valeur de i en caractère et son équivalent décimal. */
 }
 
+/* 6. Écrivez le code qui affiche sur une ligne les caractères de 'a' à 'z' (en minuscule) */
+
+void question6(void) {
+    char c;
+    for (c = 'a'; c <= 'z'; c++) { /* On itère de 'a' à 'z' inclu. */
+        printf("%c ", c); /* On affiche le caractère suivi d'un espace pour séparer. */
+    }
+    printf("\n"); /* Pas nécessaire mais plus propre. */
+}
+
+/* Pourquoi ce code est trop cool et rend le C magnifique (comparé à Python) */
+
 int main(void) { /* J'ai rajouté des printf pour enjolivait mon output mais c'est à chacun son gout. */
     /* On utilise la fonction question1() pour exécuter le code correspondant lors de l'exécution du programme. */    
     printf("Question 1 : \n");
