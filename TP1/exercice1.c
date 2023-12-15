@@ -69,5 +69,8 @@ int main(void) {
 /* Output de ./a.out :
 321 = 321
 */
-/* 4. Créer un fichier compiler.sh qui lance automatiquement la bonne commande de compilation avec les bonnes
-options pour créer un fichier exercice1.*/
+
+/* 
+4. Créer un fichier compiler.sh qui lance automatiquement la bonne commande de compilation avec les bonnes
+options pour créer un fichier exercice1.
+*/
