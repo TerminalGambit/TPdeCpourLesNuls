@@ -17,7 +17,7 @@ int main(void) {
 #include <stdio.h>
 
 void question1(void) {
-    printf("Hello World.");
+    printf("Hello World.\n"); /* \n pour le saut à la ligne. */
 }
 
 int main(void) {
