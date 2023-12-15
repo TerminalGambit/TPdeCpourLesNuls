@@ -52,6 +52,20 @@ void question2(void) {
     }
 }
 
+/* Utilisation sur le terminal avec l'entrée standard : 
+➜  exercice3 git:(main) ✗ ./compiler.sh
+➜  exercice3 git:(main) ✗ ./a.out 
+entier> saucisse
+Ce n'est pas un entier.
+➜  exercice3 git:(main) ✗ ./a.out
+entier> 23
+L'entier 23 est impair.
+➜  exercice3 git:(main) ✗ ./a.out
+entier> 18
+L'entier 18 est pair.
+➜  exercice3 git:(main) ✗ 
+*/
+
 int main(void) {
     question2();
     return 0;
