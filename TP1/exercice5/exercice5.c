@@ -18,6 +18,8 @@ entier> 7
 * * * * * * *
 entier> q*/
 
+#include <stdio.h>
+
 void pyramide(int n) {
     int i, j;
     for (i = 1; i <= n; i++) {
