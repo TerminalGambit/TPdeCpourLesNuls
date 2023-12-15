@@ -5,7 +5,7 @@ Créez alors un fichier exercice1.c contenant le code ci-dessous.
 Vous pouvez utiliser l’éditeur de votre choix (gedit, GNU/Emacs, autre).
 */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int c = 3;
 
@@ -21,7 +21,24 @@ void main(void) {
 2. Dans un terminal, compilez le fichier avec la commande : « gcc exercice1.c ». Quel est le nom de l’exécutable
 produit ? Lancez-le. Le résultat est-il celui attendu ?
 
-3. Pour éviter ce genre de mauvaise surprise, durant cette UE, nous allons systématiquement compiler le code avec
+/* Voici l'erreur affichée : 
+    ➜  TP1 git:(main) gcc exercice1.c 
+    exercice1.c:12:1: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+    void main(void) {
+    ^
+    exercice1.c:12:1: note: change return type to 'int'
+    void main(void) {
+    ^~~~
+    int
+    1 warning generated.
+
+    Qu'est-ce qui s'est passé ? 
+    -- Chaque main doit forcément renvoyait un entier, donc on doit écrire int main(void).
+    Pourquoi écrire void dans la parenthèse ?
+    -- On ne doit pas y mettre rien, il faut y avoir au moins 
+*/
+
+/* 3. Pour éviter ce genre de mauvaise surprise, durant cette UE, nous allons systématiquement compiler le code avec
 les options « gcc -Wall -ansi -pedantic exercice1.c ». Corrigez le code jusqu’à ce que le compilateur n’affiche aucun warning et que le code s’exécute comme souhaité. Vous devez trouver trois erreurs.
 4. Créer un fichier compiler.sh qui lance automatiquement la bonne commande de compilation avec les bonnes
 options pour créer un fichier exercice1.*/
