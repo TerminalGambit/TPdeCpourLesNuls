@@ -158,6 +158,40 @@ void test_division_euclidienne(void) {
 C'est pour ça qu'il faut bien tester vos fonctions.
 */
 
+/* 5. Même question avec la division décimale. Par exemple avec a=25 et b=10 on affichera « 25 = 2.5 × 10 ». */
+
+void division_decimale(int a, int b) {
+    double q = 0;
+    if (b == 0) {
+        printf("Erreur : b est nul.\n");
+    } else {
+        q = (double) a / b;
+        printf("%d = %g x %d\n", a, q, b); /* %g permet d'afficher un double. */
+    }
+}
+
+/* Pourquoi on utilise %g et pas %f dans cette ligne printf("%d = %g x %d\n", a, q, b); ?
+%f et %g sont tous deux utilisés pour afficher des valeurs de type double. 
+Cependant, ils ont des comportements légèrement différents :
+%f : Affiche le double tel quel, y compris tous les zéros non significatifs après la virgule.
+%g : Affiche le double avec une précision plus grande. Il supprime les zéros non significatifs après la virgule,
+rendant le nombre plus lisible. De plus, %g utilise la notation scientifique si le nombre est très grand ou très petit.
+Par conséquent, si vous voulez un affichage plus concis et plus lisible des nombres doubles, il est préférable d'utiliser %g.
+*/
+
+void test_division_decimale(void) {
+    printf("Test 1 : pour a = 25 et b = 10\n");
+    division_decimale(25, 10);
+    printf("\nTest 2 : pour a = 25 et b = 0\n");
+    division_decimale(25, 0);
+    printf("\nTest 3 : pour a = 0 et b = 10\n");
+    division_decimale(0, 10);
+    printf("\nTest 4 : pour a = 0 et b = 0\n");
+    division_decimale(0, 0);
+    printf("\nTest 5 : pour a = 25 et b = 1\n");
+    division_decimale(25, 1);
+}
+
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
@@ -167,6 +201,9 @@ int main(void) {
 
     printf("\nQuestion 4 :\n");
     test_division_euclidienne();
+    
+    printf("\nQuestion 5 :\n");
+    test_division_decimale();
     return 0;
 }
 
@@ -178,4 +215,14 @@ int main(void) {
 - int -> float
 - int -> double
 - float -> double
+- Il faut tester les fonctions avec des valeurs extrêmes.
+- Il faut afficher les résultats des tests et bien préciser les paramètres.
+- Parfois, vous allez rencontrer des erreurs de compilation et vous allez devoir les corriger.
+C'est pour ça qu'il faut bien tester vos fonctions.
+- %f et %g sont tous deux utilisés pour afficher des valeurs de type double.
+Cependant, ils ont des comportements légèrement différents :
+%f : Affiche le double tel quel, y compris tous les zéros non significatifs après la virgule.
+%g : Affiche le double avec une précision plus grande. Il supprime les zéros non significatifs après la virgule,
+rendant le nombre plus lisible. De plus, %g utilise la notation scientifique si le nombre est très grand ou très petit.
+Par conséquent, si vous voulez un affichage plus concis et plus lisible des nombres doubles, il est préférable d'utiliser %g.
 */
