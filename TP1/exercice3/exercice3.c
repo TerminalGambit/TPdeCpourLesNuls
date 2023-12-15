@@ -87,11 +87,25 @@ double moyenne_stdin(void) {
     return moyenne;
 }
 
+/* Utilisation sur le terminal avec l'entrée standard :
+Question 3 :
+entier> 45
+entier> 7
+entier> 13
+entier> 20
+entier> 21
+entier> saucisse
+La moyenne est : 13.333333
+*/
+
+/* Vérification : 
+((7 + 13 + 20) / 3) = 13.3333333333*/
+
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
 
     printf("\nQuestion 3 :\n");
-    moyenne_stdin();
+    printf("La moyenne est : %f\n", moyenne_stdin());
     return 0;
 }
