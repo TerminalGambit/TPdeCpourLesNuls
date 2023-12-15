@@ -132,12 +132,34 @@ void division_euclidienne(int a, int b) {
     }
 }
 
+/* Création de la fonction qui teste notre division euclidienne :
+L'idée ici, c'est de comprendre comment on teste les fonctions.
+En général, on teste les fonctions avec des valeurs extrêmes.
+On teste avec des valeurs qui sont aux extrémités de l'intervalle.
+*/
+
+void test_division_euclidienne(void) {
+    printf("Test 1 : pour a = 25 et b = 10\n");
+    division_euclidienne(25, 10);
+    printf("\nTest 2 : pour a = 25 et b = 0\n");
+    division_euclidienne(25, 0);
+    printf("\nTest 3 : pour a = 0 et b = 10\n");
+    division_euclidienne(0, 10);
+    printf("\nTest 4 : pour a = 0 et b = 0\n");
+    division_euclidienne(0, 0);
+    printf("\nTest 5 : pour a = 25 et b = 1\n");
+    division_euclidienne(25, 1);
+}
+
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
 
     printf("\nQuestion 3 :\n");
-    printf("La moyenne est : %f\n", moyenne_stdin());
+    /* printf("La moyenne est : %f\n", moyenne_stdin()); */
+
+    printf("\nQuestion 4 :\n");
+    test_division_euclidienne();
     return 0;
 }
 
