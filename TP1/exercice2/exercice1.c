@@ -13,6 +13,7 @@ int main(void) {
     return 0 ;
 }
 */
+
 #include <stdio.h>
 
 void question1(void) {
@@ -21,5 +22,5 @@ void question1(void) {
 
 int main(void) {
     question1();
-    return 0 ;
+    return 0;
 }
