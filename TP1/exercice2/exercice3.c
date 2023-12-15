@@ -28,3 +28,31 @@ int lire_entier(void) {
     '\n' signifie retour à la ligne.
     Donc on lit le caractère et on vérifie qu'il n'est pas égal à la fin du fichier et qu'il n'est pas égal à un retour à la ligne.
 */
+
+/* 2. En utilisant la question précédente, écrire une procédure qui lit un entier sur la sortie standard et affiche sa parité.
+On traitera le cas où la valeur lue ne correspond pas à un nombre.
+
+entier> saucisse
+Ce n’est pas un entier.
+entier> 23
+L’entier 23 est impair.
+entier> 18
+L’entier 18 est pair.
+
+*/
+
+void question2(void) {
+    int n = lire_entier(); /* On lit l'entier. */
+    if (n == -1) { /* Si l'entier n'est pas un entier, on affiche un message d'erreur. */
+        printf("Ce n'est pas un entier.\n");
+    } else if (n % 2 == 0) { /* Si l'entier est pair, on affiche un message. */
+        printf("L'entier %d est pair.\n", n);
+    } else { /* Sinon, on affiche un message. */
+        printf("L'entier %d est impair.\n", n);
+    }
+}
+
+int main(void) {
+    question2();
+    return 0;
+}
