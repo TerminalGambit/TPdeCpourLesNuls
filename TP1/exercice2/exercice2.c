@@ -128,3 +128,5 @@ int main(void) { /* J'ai rajouté des printf pour enjolivait mon output mais c'e
 /* Pour afficher un caractère, on utilise %c. */
 /* Pour afficher une chaîne de caractère, on utilise %s. */
 /* Pour afficher un float, on utilise %f. */
+/* On peut itérer dans une boucle for sur les caractères. */
+/* On peut déclarer une chaîne de caractère avec char s[] = "Hello World"; */
