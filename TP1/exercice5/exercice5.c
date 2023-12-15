@@ -23,32 +23,13 @@ entier> q*/
 void pyramide(int n) {
     int i, j;
     for (i = 1; i <= n; i++) {
-        for (j = 0; j < n-i; j++) {
-            printf(" ");
-        }
-        for (j = 0; j < 2*i-1; j++) {
-            printf("*");
+        printf("%*s", n - i, ""); /* On affiche les espaces. */
+        for (j = 1; j <= i; j++) {
+            printf("* "); /* On affiche les étoiles. */
         }
         printf("\n");
     }
 }
-
-/* La fonction utilise deux boucles for pour construire la pyramide. 
-La première boucle for itère de 1 à n et est utilisée pour gérer le nombre de lignes de la pyramide.
-
-À chaque itération de la première boucle, une deuxième boucle for est utilisée pour afficher les espaces avant les étoiles. 
-Le nombre d'espaces est déterminé par la différence entre n et la valeur actuelle de i. 
-Cela permet de décaler chaque ligne de la pyramide vers la droite.
-
-Ensuite, une troisième boucle for est utilisée pour afficher les étoiles. 
-Le nombre d'étoiles est déterminé par la formule 2*i-1, où i représente la valeur actuelle de la première boucle. 
-Cette formule permet d'obtenir le nombre d'étoiles nécessaire pour chaque ligne de la pyramide, en augmentant de manière progressive.
-
-Enfin, après l'affichage des espaces et des étoiles, 
-la fonction utilise printf("\n") pour passer à la ligne suivante et construire la pyramide ligne par ligne.
-
-La fonction pyramide est donc un moyen simple d'afficher une pyramide d'étoiles
-dans la console en utilisant des boucles for et des instructions printf.*/
 
 int lire_entier(void) {
     int n = 0;
