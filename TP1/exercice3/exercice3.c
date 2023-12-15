@@ -181,7 +181,7 @@ Par conséquent, si vous voulez un affichage plus concis et plus lisible des nom
 
 void test_division_decimale(void) {
     printf("Test 1 : pour a = 25 et b = 10\n");
-    division_decimale(25, 10);
+    division_decimale(25, 10); 
     printf("\nTest 2 : pour a = 25 et b = 0\n");
     division_decimale(25, 0);
     printf("\nTest 3 : pour a = 0 et b = 10\n");
@@ -190,6 +190,35 @@ void test_division_decimale(void) {
     division_decimale(0, 0);
     printf("\nTest 5 : pour a = 25 et b = 1\n");
     division_decimale(25, 1);
+}
+
+/* 6. Écrire une fonction affichant le résultat de la division, sous forme d’entier lorsque a est divisible par b et sous forme
+décimale sinon. On affichera soit une chaîne de la forme « 25/10 = 2.5 (approchée) » ou « 30/10 = 3 (exacte) ». */
+
+void division(int a, int b) {
+    if (a % b == 0) {
+        division_euclidienne(a, b);
+    } else {
+        division_decimale(a, b);
+    }
+}
+
+/* Explication de la fonction division :
+On utilise la fonction division_euclidienne si a est divisible par b.
+On utilise la fonction division_decimale sinon.
+*/
+
+void test_division(void) {
+    printf("Test 1 : pour a = 25 et b = 10\n");
+    division(25, 10); 
+    printf("\nTest 2 : pour a = 25 et b = 0\n");
+    division(25, 0);
+    printf("\nTest 3 : pour a = 0 et b = 10\n");
+    division(0, 10);
+    printf("\nTest 4 : pour a = 0 et b = 0\n");
+    division(0, 0);
+    printf("\nTest 5 : pour a = 25 et b = 1\n");
+    division(25, 1);
 }
 
 int main(void) {
@@ -204,6 +233,9 @@ int main(void) {
     
     printf("\nQuestion 5 :\n");
     test_division_decimale();
+
+    printf("\nQuestion 6 :\n");
+    test_division();
     return 0;
 }
 
