@@ -83,7 +83,14 @@ double moyenne_stdin(void) {
             i++;
         }
     }
-    moyenne = (double) somme / i;
+    moyenne = (double) somme / i; /* On convertit somme en double pour avoir une division réelle. */
+    /* Comment est-ce que ça se fait que ça marche ?
+    On a somme qui est un entier et i qui est un entier.
+    On fait somme / i.
+    On a donc une division entière.
+    On convertit somme en double pour avoir une division réelle.
+    On a donc une division réelle.
+    */
     return moyenne;
 }
 
