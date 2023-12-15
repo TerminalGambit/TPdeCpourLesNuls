@@ -84,22 +84,24 @@ double moyenne_stdin(void) {
         }
     }
     moyenne = (double) somme / i; /* On convertit somme en double pour avoir une division réelle. */
-    /* Comment est-ce que ça se fait que ça marche ?
-    On a somme qui est un entier et i qui est un entier.
-    On fait somme / i.
-    On a donc une division entière.
-    On convertit somme en double pour avoir une division réelle.
-    On a donc une division réelle.
-    */
-    /* Quand est-ce qu'on peut utiliser cette méthode pour transformer un type ?
-    Quand on veut transformer un type en un autre type qui est plus grand.
-    Autres cas où on peut utiliser cette méthode :
-    - int -> float
-    - int -> double
-    - float -> double
-    */
     return moyenne;
 }
+
+/* Explication sur cette ligne de code : moyenne = (double) somme / i; :*/
+/* Comment est-ce que ça se fait que ça marche ?
+On a somme qui est un entier et i qui est un entier.
+On fait somme / i.
+On a donc une division entière.
+On convertit somme en double pour avoir une division réelle.
+On a donc une division réelle.
+*/
+/* Quand est-ce qu'on peut utiliser cette méthode pour transformer un type ?
+Quand on veut transformer un type en un autre type qui est plus grand.
+Autres cas où on peut utiliser cette méthode :
+- int -> float
+- int -> double
+- float -> double
+*/
 
 /* Utilisation sur le terminal avec l'entrée standard :
 Question 3 :
