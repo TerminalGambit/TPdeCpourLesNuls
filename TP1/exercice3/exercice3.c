@@ -117,6 +117,21 @@ La moyenne est : 13.333333
 /* Vérification : 
 ((7 + 13 + 20) / 3) = 13.3333333333*/
 
+/* 4. Écrire une fonction qui prend en paramètre deux entiers, a et b et affiche le résultat de la division euclidienne. Par
+exemple avec a=25 et b=10 on affichera « 25 = 2×10 + 5 ». On traitera proprement la cas où b est nul. */
+
+void division_euclidienne(int a, int b) {
+    int q = 0;
+    int r = 0;
+    if (b == 0) {
+        printf("Erreur : b est nul.\n");
+    } else {
+        q = a / b;
+        r = a % b;
+        printf("%d = %d x %d + %d\n", a, q, b, r);
+    }
+}
+
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
@@ -125,3 +140,13 @@ int main(void) {
     printf("La moyenne est : %f\n", moyenne_stdin());
     return 0;
 }
+
+/* A retenir :
+- EOF signifie End Of File, c'est la fin du fichier.
+- '\n' signifie retour à la ligne.
+- On lit le caractère et on vérifie qu'il n'est pas égal à la fin du fichier et qu'il n'est pas égal à un retour à la ligne.
+- On peut utiliser la méthode pour transformer un type en un autre type qui est plus grand.
+- int -> float
+- int -> double
+- float -> double
+*/
