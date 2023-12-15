@@ -75,3 +75,8 @@ int main(void) {
 4. Créer un fichier compiler.sh qui lance automatiquement la bonne commande de compilation avec les bonnes
 options pour créer un fichier exercice1.
 */
+
+/* 
+NB: ne pas oublier de se donner les permissions pour compiler.sh : 
+chmod u+x compiler.sh
+*/
