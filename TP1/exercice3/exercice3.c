@@ -226,15 +226,19 @@ void test_division(void) {
 int main(void) {
     printf("Question 2 :\n");
     /* question2(); */
+    printf("-----------------------------\n");
 
     printf("\nQuestion 3 :\n");
     /* printf("La moyenne est : %f\n", moyenne_stdin()); */
+    printf("-----------------------------\n");
 
     printf("\nQuestion 4 :\n");
     test_division_euclidienne();
+    printf("-----------------------------\n");
     
     printf("\nQuestion 5 :\n");
     test_division_decimale();
+    printf("-----------------------------\n");
 
     printf("\nQuestion 6 :\n");
     test_division();
