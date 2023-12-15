@@ -44,6 +44,9 @@ void question3(void) {
     printf("\n"); /* Pas nécessaire mais plus propre. */
 }
 
+/* Output : 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z */
+
 /* 4. Créez deux variables, une chaîne s="Pi vaut" et un nombre x=3.1415926 puis affichez les avec printf.*/
 
 void question4(void) {
@@ -55,7 +58,8 @@ void question4(void) {
 }
 
 /* Output : 
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z */
+Pi vaut 3.141593 */
+
 
 int main(void) {
     printf("Question 1 : \n");
