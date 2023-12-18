@@ -28,6 +28,10 @@ int fibo_naif(int n) {
 /* 2. Afficher la valeur pour n=50. Qu’observez-vous? Que s’est-il passé ?*/
 
 int main(void) {
-    printf(fibo_naif(50));
+    printf("%d\n", fibo_naif(50));
     return 0;
 }
+
+/* On observe que la valeur affichée est négative.
+-298632863
+*/
