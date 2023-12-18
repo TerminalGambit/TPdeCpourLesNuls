@@ -1,5 +1,7 @@
 /* 1. Écrire, avec une boucle (et non en récursif) une fonction de signature « int fibo_naif(int n) » calculant le 𝑛^𝑒 élèment de la suite de Fibonacci.*/
 
+#include <stdio.h>
+
 int fibo_naif(int n) {
     int i;
     int a = 0; /* F(0) = 0 */
@@ -22,3 +24,4 @@ int fibo_naif(int n) {
 
     return b;
 }
+
