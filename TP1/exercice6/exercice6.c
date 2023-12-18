@@ -65,6 +65,25 @@ int fibonnaci(int n) {
     return b;
 } 
 
+int lire_entier(void) {
+    int n = 0;
+    char c;
+    int i;
+    printf("Entier> ");
+    while ((c = getchar()) != '\n') {
+        i = c - '0';
+        if (i > 9 || i < 0) {
+            return -1;
+        }
+        n = n * 10 + i;
+    }
+    if (n == 0) {
+        return -1;
+    }
+    return n;
+}
+
+
 /* 2. Afficher la valeur pour n=50. Qu’observez-vous? Que s’est-il passé ?*/
 
 
@@ -75,7 +94,7 @@ correcte. */
 la suite de Fibonacci soit un message d’erreur. */
 
 int main(void) {
-    int i = 0;
+    /* int i = 0;
 
     printf("%d\n", fibo_naif(50));
 
@@ -84,6 +103,20 @@ int main(void) {
     }
 
     printf("%d\n", i);
+    */
+
+    int n;
+    int fibo;
+
+    while ((n = lire_entier()) != -1) {
+        fibo = fibonnaci(n);
+        if (fibo == -1) {
+            printf("Débordement d'entier.\n");
+        } else {
+            printf("%d\n", fibo);
+        }
+    }
+    
     return 0;
 }
 
