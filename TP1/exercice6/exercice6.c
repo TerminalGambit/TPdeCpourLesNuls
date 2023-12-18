@@ -67,8 +67,20 @@ int fibonnaci(int n) {
 
 /* 2. Afficher la valeur pour n=50. Qu’observez-vous? Que s’est-il passé ?*/
 
+
+/* 5. En utilisant cette fonction, affichez la première valeur de n pour laquelle fibonnaci(n) ne donne pas une valeur
+correcte. */
+
 int main(void) {
+    int i;
+
     printf("%d\n", fibo_naif(50));
+
+    while (fibonnaci(i) != -1) {
+        i++;
+    }
+
+    printf("%d\n", i);
     return 0;
 }
 
