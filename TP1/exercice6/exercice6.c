@@ -25,6 +25,8 @@ int fibo_naif(int n) {
     return b;
 }
 
+/* 2. Afficher la valeur pour n=50. Qu’observez-vous? Que s’est-il passé ?*/
+
 int main(void) {
     printf(fibo_naif(50));
     return 0;
