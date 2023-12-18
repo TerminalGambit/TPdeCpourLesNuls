@@ -37,6 +37,34 @@ int fibo_naif(int n) {
     return b;
 }
 
+/* 4. Écrivez une nouvelle fonction fibonnaci semblable à celle de la question 1, mais qui renvoie -1 en cas de débordement d’entier. */
+
+int fibonnaci(int n) {
+    int i;
+    int a = 0; /* F(0) = 0 */
+    int b = 1; /* F(1) = 1 */
+    int tmp;
+
+    if (n == 0) {
+        return a; /* F(0) = 0 */
+    }
+
+    if (n == 1) {
+        return b; /* F(1) = 1 */
+    }
+
+    for (i = 2; i <= n; i++) {
+        tmp = somme(a, b);
+        if (tmp == -1) {
+            return -1;
+        }
+        a = b;
+        b = tmp;
+    }
+
+    return b;
+} 
+
 /* 2. Afficher la valeur pour n=50. Qu’observez-vous? Que s’est-il passé ?*/
 
 int main(void) {
@@ -46,4 +74,7 @@ int main(void) {
 
 /* On observe que la valeur affichée est négative.
 -298632863
+Cela est dû au fait que la valeur de la variable "b" a dépassé la valeur maximale d'un entier signé.
+La valeur maximale d'un entier signé est 2147483647.
+La valeur de la variable "b" a dépassé cette valeur à la 47ème itération de la boucle for.
 */
