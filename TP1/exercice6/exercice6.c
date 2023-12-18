@@ -25,3 +25,7 @@ int fibo_naif(int n) {
     return b;
 }
 
+int main(void) {
+    printf(fibo_naif(50));
+    return 0;
+}
