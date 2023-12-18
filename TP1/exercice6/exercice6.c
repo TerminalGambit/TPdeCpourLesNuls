@@ -71,8 +71,11 @@ int fibonnaci(int n) {
 /* 5. En utilisant cette fonction, affichez la première valeur de n pour laquelle fibonnaci(n) ne donne pas une valeur
 correcte. */
 
+/* 6. Ajoutez à votre programme une boucle qui demande un entier à l’utilisateur et affiche soit la valeur associée dans
+la suite de Fibonacci soit un message d’erreur. */
+
 int main(void) {
-    int i;
+    int i = 0;
 
     printf("%d\n", fibo_naif(50));
 
