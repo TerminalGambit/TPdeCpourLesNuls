@@ -9,3 +9,5 @@ Si certaines fonctions semblent étranges pendant les révisions, le but est de 
 Avant de commencer, lisez attentivement le cours, prenez des notes sur la syntaxe et les fonctions telles que printf.
 
 Prenez le temps de lire les "à retenir" à la fin de chaque fichier .c, j'y mets les points importants abordés dans les exercices.
+
+Pour ce TP, j'utilise les compiler.sh au lieu d'un makefile pour respecter la progression.
