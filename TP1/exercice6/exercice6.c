@@ -1,6 +1,18 @@
-/* 1. Écrire, avec une boucle (et non en récursif) une fonction de signature « int fibo_naif(int n) » calculant le 𝑛^𝑒 élèment de la suite de Fibonacci.*/
-
 #include <stdio.h>
+#include <limits.h>
+
+/* 3. Écrire une fonction de signature« int somme(int a, int b) » qui renvoie a+b si possible et -1 en cas de
+débordement. On utilisera la valeur INT_MAX de la bibliothèque limits.h (qu’il faut inclure en début de fichier
+de la même façon que l’on inclut déjà stdio.h). */
+
+int somme(int a, int b) {
+    if (a > INT_MAX - b) {
+        return -1;
+    }
+    return a + b;
+}
+
+/* 1. Écrire, avec une boucle (et non en récursif) une fonction de signature « int fibo_naif(int n) » calculant le 𝑛^𝑒 élèment de la suite de Fibonacci.*/
 
 int fibo_naif(int n) {
     int i;
