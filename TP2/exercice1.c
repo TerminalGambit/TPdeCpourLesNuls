@@ -11,3 +11,7 @@ void affiche_tableau(int tab[], int n) {
     printf("\n");
 }
 
+void question1(void) {
+    int tab[] = {1, 2, 3, 4, 5};
+    affiche_tableau(tab, 5);
+}
