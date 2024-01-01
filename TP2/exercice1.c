@@ -2,6 +2,7 @@
 qui affiche les n premiers éléments d’un tableau tab d’entiers 
 (n devant être inférieur à la taille du tableau). Écrire une fonction 
 question1 pour tester votre fonction. */
+#include <stdio.h>
 
 void affiche_tableau(int tab[], int n) {
     int i;
@@ -14,4 +15,9 @@ void affiche_tableau(int tab[], int n) {
 void question1(void) {
     int tab[] = {1, 2, 3, 4, 5};
     affiche_tableau(tab, 5);
+}
+
+int main(void) {
+    question1();
+    return 0;
 }
