@@ -1,3 +1,3 @@
 #!/bin/sh
 
-gcc -Wall -pedantic -ansi compiler.c
+gcc -Wall -pedantic -ansi exercice7.c

@@ -4,6 +4,7 @@ Un flottant est de la forme :
 (b) une suite d’entiers représentant la partie entière.
 (si vide, la partie entière vaut 0).
 (c) un point suivie éventuellement d’une suite d’entiers représentant la partie décimale. */
+#include <stdio.h>
 
 double lire_flottant(void) {
     double n = 0.0;  /* Pour stocker la partie entière et décimale*/
